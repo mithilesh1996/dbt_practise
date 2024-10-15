@@ -1,0 +1,11 @@
+version: 1
+
+sources:
+  - name: sw_data
+    database: raw
+    schema: dbt
+    tables:
+      - name: table_1
+      - name: table_2
+      - name: student
+      
