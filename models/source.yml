@@ -8,4 +8,6 @@ sources:
       - name: table_1
       - name: table_2
       - name: student
+      - name: book
+      
       

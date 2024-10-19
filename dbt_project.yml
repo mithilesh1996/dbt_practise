@@ -24,7 +24,7 @@ clean-targets: # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-  REC_SRC: "MSD"
+  REC_SRC: 'MSD'
 
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
@@ -47,7 +47,10 @@ models:
       +schema: stage
     raw_vault:
       +materialized: incremental
-      +schema: stage
-      +incremental_strategy: "append"
+      +schema: raw_vault
       hub:
       sat:
+    general:
+      +materialized: table
+      
+

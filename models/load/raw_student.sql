@@ -6,4 +6,4 @@ select * from {{source('sw_data','student')}}
 
 )
 
-select * from final
+select a.*,'{{var('REC_SRC')}}' as REC_SRC from final a

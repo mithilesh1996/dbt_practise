@@ -1,9 +1,12 @@
 {% set yaml_metadata %}
 source_model: raw_student
 hashed_columns:
-  HK_STUDENT: ID
+  HK_STUDENT:
+    - ID 
+    - NAME 
 derived_columns:
   LOAD_TS: CURRENT_TIMESTAMP()
+  
 
 
 {% endset %}   
