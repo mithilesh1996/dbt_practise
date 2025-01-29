@@ -1,9 +1,9 @@
 
 with final as (
 
-select * from {{source('sw_data','student')}}
+select * from {{source('source_data','student')}}
 
 
 )
 
-select a.*,'{{var('REC_SRC')}}' as REC_SRC from final a
+select *,'{{ var('REC_SRC')}}' AS REC_SRC, '{{ var('DEL_IND')}}' AS DEL_IND from final

@@ -1,11 +1,11 @@
-{%-  set REC = 'MSD' -%}
 {%- set yaml_metadata -%}
 source_model: stg_student
 src_pk: ['HK_STUDENT','ID']   
-src_hashdiff: HK_STUDENT
+src_hashdiff: HDIFF_H_STD
 src_payload:
     - NAME
-    - MARKS
+    - CITY
+    - DEL_IND
 src_ldts: LOAD_TS
 src_source: REC_SRC
 {% endset %}

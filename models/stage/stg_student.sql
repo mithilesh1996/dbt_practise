@@ -3,12 +3,14 @@ source_model: raw_student
 hashed_columns:
   HK_STUDENT:
     - ID 
-    - NAME 
+  HDIFF_H_STD:
+    - NAME
+    - CITY
+    - REC_SRC
+    - DEL_IND
+
 derived_columns:
   LOAD_TS: CURRENT_TIMESTAMP()
-  
-
-
 {% endset %}   
 
 {% set metadata_dict = fromyaml(yaml_metadata) %}

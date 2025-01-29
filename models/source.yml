@@ -9,5 +9,10 @@ sources:
       - name: table_2
       - name: student
       - name: book
-      
+  
+  - name: source_data
+    database: analytics
+    schema: load
+    tables:
+      - name: student
       
